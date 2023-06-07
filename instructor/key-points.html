@@ -170,7 +170,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="01-basics.html">1. Automated Version Control</a>
+        <a href="01-github.html">1. Remotes in GitHub</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -194,7 +194,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-create.html">3. Creating a Repository</a>
+        <a href="03-basics.html">3. Automated Version Control</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -206,7 +206,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-changes.html">4. Tracking Changes</a>
+        <a href="04-create.html">4. Creating a Repository</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -218,7 +218,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="05-changes.html">5. Tracking Changes</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -230,7 +230,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="06-history.html">6. Exploring History</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -242,7 +242,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="07-ignore.html">7. Ignoring Things</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -314,19 +314,7 @@
 <div class="accordion accordion-flush" id="accordionFlush14">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading14">
-        <a href="13-hosting.html">13. Hosting</a>
-    </div>
-<!--/div.accordion-header-->
-        
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush15">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading15">
-        <a href="14-supplemental-rstudio.html">14. Supplemental: Using Git from RStudio</a>
+        <a href="13-supplemental-rstudio.html">13. Supplemental: Using Git from RStudio</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -388,25 +376,37 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="01-basics"><h2 class="section-heading"><a href="01-basics.html">Automated Version Control</a></h2>
+<section id="01-github"><h2 class="section-heading"><a href="01-github.html">Remotes in GitHub</a></h2>
 <hr class="half-width">
 <ul>
-<li>Version control is like an unlimited ‘undo’.</li>
-<li>Version control also allows many people to work in parallel.</li>
+<li>A local Git repository can be connected to one or more remote
+repositories.</li>
+<li>Use the SSH protocol to connect to remote repositories.</li>
+<li>
+<code>git push</code> copies changes from a local repository to a
+remote repository.</li>
+<li>
+<code>git pull</code> copies changes from a remote repository to a
+local repository.</li>
 </ul></section><section id="02-setup"><h2 class="section-heading"><a href="02-setup.html">Setting Up Git</a></h2>
 <hr class="half-width">
 <ul>
 <li>Use <code>git config</code> with the <code>--global</code> option to
 configure a user name, email address, editor, and other preferences once
 per machine.</li>
-</ul></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Creating a Repository</a></h2>
+</ul></section><section id="03-basics"><h2 class="section-heading"><a href="03-basics.html">Automated Version Control</a></h2>
+<hr class="half-width">
+<ul>
+<li>Version control is like an unlimited ‘undo’.</li>
+<li>Version control also allows many people to work in parallel.</li>
+</ul></section><section id="04-create"><h2 class="section-heading"><a href="04-create.html">Creating a Repository</a></h2>
 <hr class="half-width">
 <ul>
 <li>
 <code>git init</code> initializes a repository.</li>
 <li>Git stores all of its repository data in the <code>.git</code>
 directory.</li>
-</ul></section><section id="04-changes"><h2 class="section-heading"><a href="04-changes.html">Tracking Changes</a></h2>
+</ul></section><section id="05-changes"><h2 class="section-heading"><a href="05-changes.html">Tracking Changes</a></h2>
 <hr class="half-width">
 <ul>
 <li>
@@ -420,30 +420,18 @@ local repository (where commits are permanently recorded).</li>
 <code>git commit</code> saves the staged content as a new commit in
 the local repository.</li>
 <li>Write a commit message that accurately describes your changes.</li>
-</ul></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
+</ul></section><section id="06-history"><h2 class="section-heading"><a href="06-history.html">Exploring History</a></h2>
 <hr class="half-width">
 <ul>
 <li>
 <code>git diff</code> displays differences between commits.</li>
 <li>
 <code>git checkout</code> recovers old versions of files.</li>
-</ul></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
+</ul></section><section id="07-ignore"><h2 class="section-heading"><a href="07-ignore.html">Ignoring Things</a></h2>
 <hr class="half-width">
 <ul>
 <li>The <code>.gitignore</code> file tells Git what files to
 ignore.</li>
-</ul></section><section id="07-github"><h2 class="section-heading"><a href="07-github.html">Remotes in GitHub</a></h2>
-<hr class="half-width">
-<ul>
-<li>A local Git repository can be connected to one or more remote
-repositories.</li>
-<li>Use the SSH protocol to connect to remote repositories.</li>
-<li>
-<code>git push</code> copies changes from a local repository to a
-remote repository.</li>
-<li>
-<code>git pull</code> copies changes from a remote repository to a
-local repository.</li>
 </ul></section><section id="08-collab"><h2 class="section-heading"><a href="08-collab.html">Collaborating</a></h2>
 <hr class="half-width">
 <ul>
@@ -460,11 +448,7 @@ same file.</li>
 other’s changes blindly, but highlights conflicts so that they can be
 resolved.</li>
 </ul></section><section id="10-open"><h2 class="section-heading"><a href="10-open.html">Open Science</a></h2>
-<hr class="half-width">
-<ul>
-<li>Open scientific work is more useful and more highly cited than
-closed.</li>
-</ul></section><section id="11-licensing"><h2 class="section-heading"><a href="11-licensing.html">Licensing</a></h2>
+<hr class="half-width"></section><section id="11-licensing"><h2 class="section-heading"><a href="11-licensing.html">Licensing</a></h2>
 <hr class="half-width">
 <ul>
 <li>The <code>LICENSE</code>, <code>LICENSE.md</code>, or
@@ -483,14 +467,7 @@ scratch.</li>
 <ul>
 <li>Add a CITATION file to a repository to explain how you want your
 work cited.</li>
-</ul></section><section id="13-hosting"><h2 class="section-heading"><a href="13-hosting.html">Hosting</a></h2>
-<hr class="half-width">
-<ul>
-<li>Projects can be hosted on university servers, on personal domains,
-or on a public hosting service.</li>
-<li>Rules regarding intellectual property and storage of sensitive
-information apply no matter where code and data are hosted.</li>
-</ul></section><section id="14-supplemental-rstudio"><h2 class="section-heading"><a href="14-supplemental-rstudio.html">Supplemental: Using Git from RStudio</a></h2>
+</ul></section><section id="13-supplemental-rstudio"><h2 class="section-heading"><a href="13-supplemental-rstudio.html">Supplemental: Using Git from RStudio</a></h2>
 <hr class="half-width">
 <ul>
 <li>Using RStudio’s Git integration allows you to version control a
@@ -508,12 +485,12 @@ project over time.</li>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/JohnMulligan/git-novice/edit/main/README.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/swcarpentry/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
-        | <a href="https://github.com/swcarpentry/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/swcarpentry/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/JohnMulligan/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/JohnMulligan/git-novice/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/JohnMulligan/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:jcm10@rice.edu">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         

@@ -78,11 +78,11 @@
   Version Control with Git
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 81%" class="percentage">
-    81%
+<aside class="col-md-12 lesson-progress"><div style="width: 85%" class="percentage">
+    85%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 81%" aria-valuenow="81" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 85%" aria-valuenow="85" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -137,7 +137,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="01-basics.html">1. Automated Version Control</a>
+        <a href="01-github.html">1. Remotes in GitHub</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -155,7 +155,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-create.html">3. Creating a Repository</a>
+        <a href="03-basics.html">3. Automated Version Control</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -164,7 +164,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-changes.html">4. Tracking Changes</a>
+        <a href="04-create.html">4. Creating a Repository</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -173,7 +173,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="05-changes.html">5. Tracking Changes</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -182,7 +182,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="06-history.html">6. Exploring History</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -191,7 +191,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="07-ignore.html">7. Ignoring Things</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -218,12 +218,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         10. Open Science
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+        
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#reproducibility">Reproducibility</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -249,16 +256,7 @@
 <div class="accordion accordion-flush" id="accordionFlush14">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading14">
-        <a href="13-hosting.html">13. Hosting</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush15">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading15">
-        <a href="14-supplemental-rstudio.html">14. Supplemental: Using Git from RStudio</a>
+        <a href="13-supplemental-rstudio.html">13. Supplemental: Using Git from RStudio</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -317,7 +315,7 @@
         <h1>Open Science</h1>
         <p> Last updated on 2023-06-07 | 
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/10-open.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/JohnMulligan/git-novice/edit/main/episodes/10-open.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
@@ -400,6 +398,23 @@ is cited and re-used</a>. However, people who want to work this way need
 to make some decisions about what exactly “open” means and how to do it.
 You can find more on the different aspects of Open Science in <a href="https://link.springer.com/book/10.1007/978-3-319-00026-8" class="external-link">this
 book</a>.</p>
+<div id="callout1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<p>Rice has a top-notch data repository service! And we work with the
+people who run it.</p>
+<p>Why would you want this? Not just because it’s nice for others, but
+because it’s good for you, too!</p>
+<p>Your article gets a DOI, but so does your dataset – and search
+engines index both!</p>
+<figure><img src="fig/google_scholar.png" alt="" class="figure mx-auto d-block"><figcaption>John Connor: <a href="https://scholar.google.com/citations?user=pLJjxAcAAAAJ&amp;hl=en" class="external-link uri">https://scholar.google.com/citations?user=pLJjxAcAAAAJ&amp;hl=en</a></figcaption></figure></div>
+</div>
+</div>
 <p>This is one of the (many) reasons we teach version control. When used
 diligently, it answers the “how” question by acting as a shareable
 electronic lab notebook for computational work:</p>
@@ -427,79 +442,30 @@ Citation</a>.</p>
 </div>
 </div>
 </div>
-<div id="how-reproducible-is-my-work" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="how-reproducible-is-my-work" class="callout-inner">
-<h3 class="callout-title">How Reproducible Is My Work?<a class="anchor" aria-label="anchor" href="#how-reproducible-is-my-work"></a>
-</h3>
-<div class="callout-content">
-<p>Ask one of your labmates to reproduce a result you recently obtained
-using only what they can find in your papers or on the web. Try to do
-the same for one of their results, then try to do it for a result from a
-lab you work with.</p>
-</div>
-</div>
-</div>
-<div id="how-to-find-an-appropriate-data-repository" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="how-to-find-an-appropriate-data-repository" class="callout-inner">
-<h3 class="callout-title">How to Find an Appropriate Data
-Repository?<a class="anchor" aria-label="anchor" href="#how-to-find-an-appropriate-data-repository"></a>
-</h3>
-<div class="callout-content">
-<p>Surf the internet for a couple of minutes and check out the data
-repositories mentioned above: <a href="https://figshare.com/" class="external-link">Figshare</a>, <a href="https://zenodo.org" class="external-link">Zenodo</a>, <a href="https://datadryad.org/" class="external-link">Dryad</a>. Depending on your field of
-research, you might find community-recognized repositories that are
-well-known in your field. You might also find useful <a href="https://www.nature.com/sdata/data-policies/repositories" class="external-link">these
-data repositories recommended by Nature</a>. Discuss with your neighbor
-which data repository you might want to approach for your current
-project and explain why.</p>
-</div>
-</div>
-</div>
-<div id="how-to-track-large-data-or-image-files-using-git" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="how-to-track-large-data-or-image-files-using-git" class="callout-inner">
-<h3 class="callout-title">How to Track Large Data or Image Files using
-Git?<a class="anchor" aria-label="anchor" href="#how-to-track-large-data-or-image-files-using-git"></a>
-</h3>
-<div class="callout-content">
-<p>Large data or image files such as <code>.md5</code> or
-<code>.psd</code> file types can be tracked within a github repository
-using the <a href="https://git-lfs.github.com" class="external-link">Git Large File
-Storage</a> open source extension tool. This tool automatically uploads
-large file contents to a remote server and replaces the file with a text
-pointer within the github repository.</p>
-<p>Try downloading and installing the Git Large File Storage extension
-tool, then add tracking of a large file to your github repository. Ask a
-colleague to clone your repository and describe what they see when they
-access that large file.</p>
-</div>
-</div>
-</div>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
-<div class="callout-content">
-<ul><li>Open scientific work is more useful and more highly cited than
-closed.</li>
-</ul></div>
-</div>
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+<section id="reproducibility"><h2 class="section-heading">Reproducibility<a class="anchor" aria-label="anchor" href="#reproducibility"></a>
+</h2>
+<hr class="half-width"><p>Why do we want to make research methods and results open and
+testable? For the same reason that we want to publish our results! In
+order to have them tested further, because:</p>
+<ol style="list-style-type: decimal"><li>We’re not always right: You want to help people check your
+work.</li>
+<li>We never get the final word: You want to help people pick up where
+you left off.</li>
+</ol><div class="section level3">
+<h3 id="example-thomas-herndon">Example: Thomas Herndon<a class="anchor" aria-label="anchor" href="#example-thomas-herndon"></a></h3>
+<p>Whoops! Sorry we got lazy in Excel and melted the global economy.</p>
+<figure><img src="fig/herndon.png" alt="" class="figure mx-auto d-block"><figcaption>Thomas Herndon: <a href="https://en.wikipedia.org/wiki/Thomas_Herndon" class="external-link uri">https://en.wikipedia.org/wiki/Thomas_Herndon</a></figcaption></figure></div>
+<div class="section level3">
+<h3 id="example-the-weinberger-lab">Example: The Weinberger Lab<a class="anchor" aria-label="anchor" href="#example-the-weinberger-lab"></a></h3>
+<p>You’re welcome for a beautiful methods breakdown on a very difficult
+modeling question.</p>
+<figure><img src="fig/weinberger_lab_notebook.png" alt="" class="figure mx-auto d-block"><figcaption>Weinberger Lab Github.io notebooks: <a href="https://weinbergerlab.github.io/excess_pi_covid/#excess_deaths_in_four_high-incidence_states" class="external-link uri">https://weinbergerlab.github.io/excess_pi_covid/#excess_deaths_in_four_high-incidence_states</a></figcaption></figure><figure><img src="fig/weinberger_lab_github.png" alt="" class="figure mx-auto d-block"><figcaption>Weinberger Lab Github repository: <a href="https://github.com/weinbergerlab/excess_pi_covid" class="external-link uri">https://github.com/weinbergerlab/excess_pi_covid</a></figcaption></figure></div>
+<div class="section level3">
+<h3 id="future-work-the-slavevoyages-impute-algorithms">Future work! The SlaveVoyages Impute Algorithms :)<a class="anchor" aria-label="anchor" href="#future-work-the-slavevoyages-impute-algorithms"></a></h3>
+<p>SPSS –&gt; Jupyter Notebooks?</p>
+<p>I’m taking volunteers … <a href="mailto:jcm10@rice.edu" class="email">jcm10@rice.edu</a> … no, seriously.</p>
+<figure><img src="fig/sv_impute.png" alt="" class="figure mx-auto d-block"><figcaption>1712 lines of SPSS transcoded to python… <a href="https://github.com/rice-crc/voyages/blob/main/voyages/apps/contribute/imputed.py" class="external-link uri">https://github.com/rice-crc/voyages/blob/main/voyages/apps/contribute/imputed.py</a></figcaption></figure></div>
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="09-conflict.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="11-licensing.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -517,12 +483,12 @@ closed.</li>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/10-open.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/JohnMulligan/git-novice/edit/main/episodes/10-open.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/swcarpentry/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
-        | <a href="https://github.com/swcarpentry/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/swcarpentry/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/JohnMulligan/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/JohnMulligan/git-novice/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/JohnMulligan/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:jcm10@rice.edu">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         

@@ -4,7 +4,13 @@
     <loc>https://swcarpentry.github.io/git-novice/01-basics.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/01-github.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/02-setup.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/03-basics.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/03-create.html</loc>
@@ -13,13 +19,25 @@
     <loc>https://swcarpentry.github.io/git-novice/04-changes.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/04-create.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/05-changes.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/05-history.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/06-history.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/06-ignore.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/07-github.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/07-ignore.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/08-collab.html</loc>
@@ -40,6 +58,9 @@
     <loc>https://swcarpentry.github.io/git-novice/13-hosting.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/13-supplemental-rstudio.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/14-supplemental-rstudio.html</loc>
   </url>
   <url>
@@ -52,7 +73,13 @@
     <loc>https://swcarpentry.github.io/git-novice/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/aio.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/discuss.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/images.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/index.html</loc>
@@ -61,7 +88,13 @@
     <loc>https://swcarpentry.github.io/git-novice/instructor/01-basics.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/01-github.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/02-setup.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/03-basics.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/03-create.html</loc>
@@ -70,13 +103,25 @@
     <loc>https://swcarpentry.github.io/git-novice/instructor/04-changes.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/04-create.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/05-changes.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/05-history.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/06-history.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/06-ignore.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/07-github.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/07-ignore.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/08-collab.html</loc>
@@ -97,6 +142,9 @@
     <loc>https://swcarpentry.github.io/git-novice/instructor/13-hosting.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/13-supplemental-rstudio.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/14-supplemental-rstudio.html</loc>
   </url>
   <url>
@@ -109,16 +157,34 @@
     <loc>https://swcarpentry.github.io/git-novice/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/discuss.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/profiles.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/key-points.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/profiles.html</loc>
