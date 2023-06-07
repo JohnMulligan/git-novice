@@ -37,46 +37,6 @@ Courtesy NASA/JPL-Caltech.
 © Luc Viatour / [https://lucnix.be](https://lucnix.be/) /
 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en).
 
-First, let's create a new directory in the `Desktop` folder for our work and then change the current working directory to the newly created one:
-
-```bash
-$ cd ~/Desktop
-$ mkdir planets
-$ cd planets
-```
-
-Then we tell Git to make `planets` a [repository](../learners/reference.md#repository)
-\-- a place where Git can store versions of our files:
-
-```bash
-$ git init
-```
-
-It is important to note that `git init` will create a repository that
-can include subdirectories and their files---there is no need to create
-separate repositories nested within the `planets` repository, whether
-subdirectories are present from the beginning or added later. Also, note
-that the creation of the `planets` directory and its initialization as a
-repository are completely separate processes.
-
-If we use `ls` to show the directory's contents,
-it appears that nothing has changed:
-
-```bash
-$ ls
-```
-
-But if we add the `-a` flag to show everything,
-we can see that Git has created a hidden directory within `planets` called `.git`:
-
-```bash
-$ ls -a
-```
-
-```output
-.	..	.git
-```
-
 Git uses this special subdirectory to store all the information about the project,
 including the tracked files and sub-directories located within the project's directory.
 If we ever delete the `.git` subdirectory,

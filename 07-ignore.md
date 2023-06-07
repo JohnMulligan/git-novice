@@ -51,7 +51,7 @@ What's worse,
 having them all listed could distract us from changes that actually matter,
 so let's tell Git to ignore them.
 
-We do this by creating a file in the root directory of our project called `.gitignore`:
+We do this by looking at the file in the root directory of our project called `.gitignore`:
 
 ```bash
 $ nano .gitignore
@@ -68,8 +68,7 @@ and everything in the `results` directory.
 (If any of these files were already being tracked,
 Git would continue to track them.)
 
-Once we have created this file,
-the output of `git status` is much cleaner:
+Once we have updated this file, the output of `git status` is much cleaner:
 
 ```bash
 $ git status
@@ -77,15 +76,15 @@ $ git status
 
 ```output
 On branch main
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
 
-	.gitignore
-
-nothing added to commit but untracked files present (use "git add" to track)
+no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-The only thing Git notices now is the newly-created `.gitignore` file.
+The only thing Git notices now is our modified `.gitignore` file.
 You might think we wouldn't want to track it,
 but everyone we're sharing our repository with will probably want to ignore
 the same things that we're ignoring.

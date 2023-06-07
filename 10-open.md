@@ -83,6 +83,18 @@ However,
 people who want to work this way need to make some decisions
 about what exactly "open" means and how to do it. You can find more on the different aspects of Open Science in [this book](https://link.springer.com/book/10.1007/978-3-319-00026-8).
 
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+Rice has a top-notch data repository service! And we work with the people who run it.
+
+Why would you want this? Not just because it's nice for others, but because it's good for you, too!
+
+Your article gets a DOI, but so does your dataset -- and search engines index both!
+
+![John Connor: https://scholar.google.com/citations?user=pLJjxAcAAAAJ&hl=en](fig/google_scholar.png)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 This is one of the (many) reasons we teach version control.
 When used diligently,
 it answers the "how" question
@@ -109,53 +121,32 @@ etc.) can be turned into a citable object. You'll learn how to do this in
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
 
-## How Reproducible Is My Work?
+## Reproducibility
 
-Ask one of your labmates to reproduce a result you recently obtained
-using only what they can find in your papers or on the web.
-Try to do the same for one of their results,
-then try to do it for a result from a lab you work with.
+Why do we want to make research methods and results open and testable? For the same reason that we want to publish our results! In order to have them tested further, because:
 
+1. We're not always right: You want to help people check your work.
+1. We never get the final word: You want to help people pick up where you left off.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+### Example: Thomas Herndon
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+Whoops! Sorry we got lazy in Excel and melted the global economy.
 
-## How to Find an Appropriate Data Repository?
+![Thomas Herndon: https://en.wikipedia.org/wiki/Thomas_Herndon](fig/herndon.png)
 
-Surf the internet for a couple of minutes and check out the data repositories
-mentioned above: [Figshare](https://figshare.com/), [Zenodo](https://zenodo.org),
-[Dryad](https://datadryad.org/). Depending on your field of research, you might
-find community-recognized repositories that are well-known in your field.
-You might also find useful [these data repositories recommended by Nature](https://www.nature.com/sdata/data-policies/repositories).
-Discuss with your neighbor which data repository you might want to
-approach for your current project and explain why.
+### Example: The Weinberger Lab
 
+You're welcome for a beautiful methods breakdown on a very difficult modeling question.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+![Weinberger Lab Github.io notebooks: https://weinbergerlab.github.io/excess_pi_covid/#excess_deaths_in_four_high-incidence_states](fig/weinberger_lab_notebook.png)
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+![Weinberger Lab Github repository: https://github.com/weinbergerlab/excess_pi_covid](fig/weinberger_lab_github.png)
 
-## How to Track Large Data or Image Files using Git?
+### Future work! The SlaveVoyages Impute Algorithms :)
 
-Large data or image files such as `.md5` or `.psd` file types can be tracked within
-a github repository using the [Git Large File Storage](https://git-lfs.github.com)
-open source extension tool.  This tool automatically uploads large file contents to
-a remote server and replaces the file with a text pointer within the github repository.
+SPSS --> Jupyter Notebooks?
 
-Try downloading and installing the Git Large File Storage extension tool, then add
-tracking of a large file to your github repository.  Ask a colleague to clone your
-repository and describe what they see when they access that large file.  
+I'm taking volunteers ... jcm10@rice.edu ... no, seriously.
 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::: keypoints
-
-- Open scientific work is more useful and more highly cited than closed.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
+![1712 lines of SPSS transcoded to python... https://github.com/rice-crc/voyages/blob/main/voyages/apps/contribute/imputed.py](fig/sv_impute.png)
