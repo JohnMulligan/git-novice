@@ -348,7 +348,9 @@ share your code. But why take chances?</p>
 <li>And then go to your homepage on GitHub.com</li>
 <li>Add a picture of your favorite rabbit to your profile. This is key
 to good coding.</li>
-</ol><figure><img src="../fig/robot.png" alt="" class="figure mx-auto d-block"><figcaption>Github Profile: <a href="https://github.com/JohnMulligan" class="external-link uri">https://github.com/JohnMulligan</a></figcaption></figure></section><section id="create-a-remote-repository"><h2 class="section-heading">1. Create a remote repository<a class="anchor" aria-label="anchor" href="#create-a-remote-repository"></a>
+</ol><figure><img src="../fig/robot.png" alt="Github Profile: https://github.com/JohnMulligan" class="figure mx-auto d-block"><div class="figcaption">Github Profile: <a href="https://github.com/JohnMulligan" class="external-link uri">https://github.com/JohnMulligan</a>
+</div>
+</figure></section><section id="create-a-remote-repository"><h2 class="section-heading">1. Create a remote repository<a class="anchor" aria-label="anchor" href="#create-a-remote-repository"></a>
 </h2>
 <hr class="half-width"><p>Now that you’re logged into to <a href="https://github.com" class="external-link">GitHub</a>, click on the icon in the top right
 corner to create a new repository called <code>planets</code>:</p>
@@ -363,13 +365,12 @@ URL and some information on how to configure your local repository:</p>
 <hr class="half-width"><p>The home page of the repository on GitHub includes the URL string we
 need to identify it:</p>
 <figure><img src="../fig/github-find-repo-string.png" alt="Where to Find Repository URL on GitHub" class="figure mx-auto d-block"></figure><p>Click on the ‘SSH’ link to change the <a href="reference.html#protocol">protocol</a> from HTTPS to SSH.</p>
-<div id="https-vs.-ssh" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="https-vs.-ssh" class="callout-inner">
-<h3 class="callout-title">HTTPS vs. SSH<a class="anchor" aria-label="anchor" href="#https-vs.-ssh"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="https-vs--ssh">HTTPS vs. SSH<a class="anchor" aria-label="anchor" href="#https-vs--ssh"></a></h3>
 <div class="callout-content">
 <p>We use SSH here because, while it requires some additional
 configuration, it is a security protocol widely used by many
@@ -404,13 +405,12 @@ and add the public key to a GitHub account.</p>
 <p>The first thing we are going to do is check if this has already been
 done on the computer you’re on. Because generally speaking, this setup
 only needs to happen once and then you can forget about it.</p>
-<div id="keeping-your-keys-secure" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="keeping-your-keys-secure" class="callout-inner">
-<h3 class="callout-title">Keeping your keys secure<a class="anchor" aria-label="anchor" href="#keeping-your-keys-secure"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="keeping-your-keys-secure">Keeping your keys secure<a class="anchor" aria-label="anchor" href="#keeping-your-keys-secure"></a></h3>
 <div class="callout-content">
 <p>You shouldn’t really forget about your SSH keys, since they keep your
 account secure. It’s good practice to audit your secure shell keys every
@@ -424,7 +424,7 @@ your computer.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span></code></pre>
 </div>
 <p>Your output is going to look a little different depending on whether
 or not SSH has ever been set up on the computer you are using.</p>
@@ -449,7 +449,7 @@ create them.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ssh-keygen <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"vlad@tran.sylvan.ia"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> ssh-keygen <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"vlad@tran.sylvan.ia"</span></span></code></pre>
 </div>
 <p>If you are using a legacy system that doesn’t support the Ed25519
 algorithm, use:
@@ -506,7 +506,7 @@ when we check.</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -524,7 +524,7 @@ GitHub can read our authentication.</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -544,7 +544,7 @@ key.</p>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> ~/.ssh/id_ed25519.pub</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">cat</span> ~/.ssh/id_ed25519.pub</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -568,7 +568,7 @@ codebase!</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone git@github.com:vlad/planets.git</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> git clone git@github.com:vlad/planets.git</span></code></pre>
 </div>
 <p>Make sure to use the URL for your repository rather than Vlad’s: the
 only difference should be your username instead of
@@ -576,33 +576,33 @@ only difference should be your username instead of
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Cloning</span> into <span class="st">'planets2'</span>...</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Enumerating objects: 5, done.</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Counting objects: 100% <span class="er">(</span><span class="ex">5/5</span><span class="kw">)</span><span class="ex">,</span> done.</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Compressing objects: 100% <span class="er">(</span><span class="ex">4/4</span><span class="kw">)</span><span class="ex">,</span> done.</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Receiving</span> objects: 100% <span class="er">(</span><span class="ex">5/5</span><span class="kw">)</span><span class="ex">,</span> 5.98 KiB <span class="kw">|</span> <span class="ex">5.98</span> MiB/s, done.</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Total 5 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> reused 0 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> pack-reused 0</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">Cloning</span> into <span class="st">'planets2'</span>...</span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="ex">remote:</span> Enumerating objects: 5, done.</span>
+<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a><span class="ex">remote:</span> Counting objects: 100% <span class="er">(</span><span class="ex">5/5</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a><span class="ex">remote:</span> Compressing objects: 100% <span class="er">(</span><span class="ex">4/4</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a><span class="ex">Receiving</span> objects: 100% <span class="er">(</span><span class="ex">5/5</span><span class="kw">)</span><span class="ex">,</span> 5.98 KiB <span class="kw">|</span> <span class="ex">5.98</span> MiB/s, done.</span>
+<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a><span class="ex">remote:</span> Total 5 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> reused 0 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> pack-reused 0</span></code></pre>
 </div>
 <p>We can now check to see that the repository has been cloned:</p>
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> .</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="fu">ls</span> .</span></code></pre>
 </div>
 <p>And we can then navigate into the folder and take a look at what’s
 been copied.</p>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> planets2</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> .</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="bu">cd</span> planets2</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a><span class="fu">ls</span> .</span></code></pre>
 </div>
 <p>Inspect that folder in your text editor or filebrowser. We can also
 check this repository’s connection to the remote repo.</p>
 <div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git remote <span class="at">-v</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">$</span> git remote <span class="at">-v</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -617,16 +617,16 @@ origin   git@github.com:vlad/planets.git (push)</code></pre>
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> rabbit.txt</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="fu">touch</span> rabbit.txt</span></code></pre>
 </div>
 <p>You should see that file in your filebrowser. Now type the
 following:</p>
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"hello rabbit"</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"hello rabbit"</span></span>
+<span id="cb21-3"><a href="#cb21-3" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre>
 </div>
 <p>Refresh your browser window. What do you see?</p>
 <p>In the next lesson, we’ll figure out what all of this is for :)</p>
@@ -710,7 +710,7 @@ local repository.</li>
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/01-github.html",
   "dateCreated": "2014-12-04",
   "dateModified": "2023-06-07",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
